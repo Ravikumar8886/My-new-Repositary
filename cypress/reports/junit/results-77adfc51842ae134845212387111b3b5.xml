@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="33.877" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-11-29T13:34:45" tests="0" file="cypress/integration/actiCreateNewCust.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="working on tasks module" timestamp="2022-11-29T13:34:45" tests="2" time="33.853" failures="0">
+    <testcase name="working on tasks module should not create new customer" time="12.490" classname="should not create new customer">
+    </testcase>
+    <testcase name="working on tasks module should prepare a report on staff performance" time="16.922" classname="should prepare a report on staff performance">
+    </testcase>
+  </testsuite>
+</testsuites>
