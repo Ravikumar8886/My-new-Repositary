@@ -41,12 +41,13 @@ describe('working on tasks module',()=>
         ts.createBtn().click();
         ts.toValidateName().as('waitforTitle')
         
-        cy.wait('@waitforTitle').then(function(){
-            ts.toValidateName().should('have.text',testname);
-        })
+        // cy.wait('@waitforTitle').then(function()
+        // {
+        //     ts.toValidateName().should('have.text',testname);
+        // })
     })
 
-    it.only('should not create new customer',function()    //use of function keyword is madatory.
+    it('should not create new customer',function()    //use of function keyword is madatory.
     {
         cy.login(this.data.username,this.data.password);
         ts.getTask().click();
@@ -64,7 +65,7 @@ describe('working on tasks module',()=>
         'Assigned users and managers of the new customer will get access to all its projects & tasks')
     })
 
-    it.only('should prepare a report on staff performance',function()
+    it('should prepare a report on staff performance',function()
     {
         cy.login(this.data.username,this.data.password);
         reports.getReport().click();
@@ -86,7 +87,7 @@ describe('working on tasks module',()=>
     })
     describe('working on report module',function()
     {
-        it.only('should prepare a report in vertical manner',function()
+        it('should prepare a report in vertical manner',function()
     {
         cy.login(this.data.username,this.data.password);
         reports.getReport().click();
@@ -95,7 +96,7 @@ describe('working on tasks module',()=>
         //reports.getReportDb().click({force:true}).type(testname);
         //reports.toSave().click();
     })
-    it.only('should prepare a report in horizantal manner',function()
+    it('should prepare a report in horizantal manner',function()
     {
         cy.login(this.data.username,this.data.password);
         reports.getReport().click();
@@ -103,7 +104,7 @@ describe('working on tasks module',()=>
         reports.getHorizantalBar().click();
         
     })
-    it.only('should prepare a piechart report',function()
+    it('should prepare a piechart report',function()
     {
         cy.login(this.data.username,this.data.password);
         reports.getReport().click();

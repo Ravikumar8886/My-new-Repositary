@@ -1,4 +1,4 @@
-import ActiPOM from './actiPOM.cy'
+import ActiPOM from '../POM1/actiPOM.cy'
 
 describe('page object model',function()
 {

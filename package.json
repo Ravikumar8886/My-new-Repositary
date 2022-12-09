@@ -26,8 +26,9 @@
     },
   "scripts": {
     "test": "mocha",
-   
-    "cy:run": "npx cypress run --spec 'cypress/integration/actiCreateNewCust.cy.js' --record --key 82775edb-4a25-4fee-8c7a-2b53e865000d --parallel",
+    "tests":"npx cypress run --headed",
+    "runtests":"npm run tests",
+    "cy:run": "npx cypress run --spec 'cypress/integration/actiCreateNewCust.cy.js' --record --key 82775edb-4a25-4fee-8c7a-2b53e865000d",
     "cy:runCrossBrowser": "npm run cy:run -- --browser chrome --group Chrome --ci-build-id 29 & npm run cy:run -- --browser edge --group Edge --ci-build-id 29"
   },
   "author": "",
