@@ -31,7 +31,7 @@
     "test:chrome":"npx cypress run --headed --browser chrome --spec D:\\cypressVer9\\cypress\\integration\\*.cy.js",
     "test:edge":"npx cypress run --headed --browser edge --spec D:\\cypressVer9\\cypress\\integration\\*.cy.js",
     "test:electron":"npx cypress run --headed --browser electron --spec D:\\cypressVer9\\cypress\\integration\\*.cy.js",
-    "cy:run": "npx cypress run --spec 'cypress/integration/actiCreateNewCust.cy.js' --record --key 82775edb-4a25-4fee-8c7a-2b53e865000d",
+    "cy:run": "npx cypress run --headed --spec 'cypress/integration/actiCreateNewCust.cy.js' --record --key 82775edb-4a25-4fee-8c7a-2b53e865000d",
     "cy:runCrossBrowser": "npm run cy:run -- --browser chrome --group Chrome --ci-build-id 29 & npm run cy:run -- --browser edge --group Edge --ci-build-id 29"
   },
   "CYPRESS_RUN_BINARY":"C:\\Users\\Administrator\\AppData\\Local\\Cypress\\Cache\\4.8.0\\Cypress\\Cypress.exe",
