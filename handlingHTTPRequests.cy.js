@@ -22,6 +22,5 @@ describe('handling of http requests',()=>
             cy.get('.btn.btn-primary').click();
             
             cy.wait("@dbresponse")
-
     })
 })
