@@ -34,6 +34,7 @@
     "cy:run": "npx cypress run --spec 'cypress/integration/actiCreateNewCust.cy.js' --record --key 82775edb-4a25-4fee-8c7a-2b53e865000d",
     "cy:runCrossBrowser": "npm run cy:run -- --browser chrome --group Chrome --ci-build-id 29 & npm run cy:run -- --browser edge --group Edge --ci-build-id 29"
   },
+  "CYPRESS_RUN_BINARY":"C:\\Users\\Administrator\\AppData\\Local\\Cypress\\Cache\\4.8.0\\Cypress\\Cypress.exe",
   "author": "",
   "license": "ISC",
   "description": ""
